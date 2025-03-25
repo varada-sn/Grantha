@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+```mermaid
+graph TD;
+    A[Book Resource Aggregator-Grantha];
+    C[PDF Service];
+    D[Video Service];
+    E[Podcast Service];
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+    A --> C;
+    A --> D;
+    A --> E;
+```
 
-## Available Scripts
+# Prerequisites and Installation Steps 
 
-In the project directory, you can run:
+## Technologies & Tools Used
 
-### `npm start`
+| Software             | Version Used       | Installation Link |
+|----------------------|-------------------|------------------|
+| **Spring Initializr** | Latest (2025)      | [🔗 Spring Initializr](https://start.spring.io/) |
+| **IntelliJ IDEA**    | 2024.1 (Community/Ultimate) | [🔗 Download IntelliJ](https://www.jetbrains.com/idea/download/) |
+| **VS Code**          | 1.87 (March 2025)  | [🔗 Download VS Code](https://code.visualstudio.com/) |
+| **React.js**         | 18.2.0             | [🔗 React Docs](https://react.dev/) |
+| **Node.js** (for React) | 18.19.0           | [🔗 Download Node.js](https://nodejs.org/) |
+| **Postman**          | 11.0.0 (2025)      | [🔗 Download Postman](https://www.postman.com/downloads/) |
+| **PostgreSQL**       | 15.6               | [🔗 Download PostgreSQL](https://www.postgresql.org/download/) |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation steps for Backend :
+Step 1 : This project uses SpringBoot (a Java framework). Use Spring Initializer to generate a Springboot project.
+Select the following 
+Project : Maven
+Language : Java
+SpringBoot : 3.4.4
+Enter metadata and add dependencies : Spring Web , Spring Data JPA , PostgreSQL driver
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Step 2 : Extract and open the generated zip file through IntelliJ IDE.
 
-### `npm test`
+Step 3 : Start Building and check responses from server through postman ! 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Make sure to maintain packages for each service in an organized way- for easy imports 😱
 
-### `npm run build`
+## Installation steps for Frontend :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Step 1: Install Node.js and Create React App
+npx create-react-app grantha-frontend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Step 2: Open the Project in VS Code
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Step 3: Install Required Dependencies
+Run the following command :
+npm install react-router-dom axios redux react-redux @reduxjs/toolkit react-query tailwindcss @mui/icons-material lucide-react
 
-### `npm run eject`
+Step 4: Start the Development Server
+Start the React app using: npm start
+This will run the frontend on http://localhost:3000/ (or 5432)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Watch Grantha on your screen now! 😎🚀🔥
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Which file to run first after you download our code from here ? 
+Run the GranthaApplication.java file inside the src/main/java/com/grantha/ package
+and write npm start in VsCode terminal for user interface. You can view it on your localhost.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### Thank you for checking Grantha out !
 
-## Learn More
+### Built with endless errors and laughter 💙
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Lipisha and Varada 
+### Mtech IT , RVCE Bangalore.
